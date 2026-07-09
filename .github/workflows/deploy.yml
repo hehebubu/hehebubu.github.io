@@ -17,6 +17,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Seoul # 글 날짜를 한국시간 기준으로 표시
     steps:
       - uses: actions/checkout@v4
         with:
