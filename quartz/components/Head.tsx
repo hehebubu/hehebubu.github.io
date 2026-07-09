@@ -40,6 +40,10 @@ export default (() => {
       <head>
         <title>{title}</title>
         <meta charSet="utf-8" />
+        <meta
+          name="google-site-verification"
+          content="PPzc5AEtfU5E04prcxKYRV7S80ULW6NXyE1SRu5Rnb4"
+        />
         {cfg.theme.cdnCaching && cfg.theme.fontOrigin === "googleFonts" && (
           <>
             <link rel="preconnect" href="https://fonts.googleapis.com" />
