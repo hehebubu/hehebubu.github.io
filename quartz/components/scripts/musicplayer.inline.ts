@@ -21,6 +21,10 @@ const tracks = [
   { src: "/static/music/08-beethoven-moonlight-2nd.mp3", title: "베토벤 — 월광 소나타 2악장" },
   { src: "/static/music/09-bach-wtc-prelude-3.mp3", title: "바흐 — 평균율 프렐류드 BWV 848" },
   { src: "/static/music/10-bach-goldberg-aria.mp3", title: "바흐 — 골드베르크 변주곡 아리아" },
+  {
+    src: "/static/music/11-liszt-la-campanella.mp3",
+    title: "파가니니·리스트 — 라 캄파넬라",
+  },
 ]
 
 function shuffledOrder(): number[] {
