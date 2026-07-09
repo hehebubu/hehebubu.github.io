@@ -1,0 +1,64 @@
+#bgm-player {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 900;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 2rem;
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  opacity: 0.85;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: var(--darkgray);
+    font-size: 1rem;
+    line-height: 1;
+    padding: 0.25rem 0.35rem;
+    border-radius: 50%;
+
+    &:hover {
+      color: var(--secondary);
+    }
+  }
+
+  #bgm-title {
+    max-width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 0.75rem;
+    color: var(--darkgray);
+    transition: max-width 0.4s ease;
+  }
+
+  .bgm-icon-pause {
+    display: none;
+    font-size: 0.8rem;
+  }
+
+  &.playing {
+    #bgm-title {
+      max-width: 14rem;
+      padding: 0 0.25rem;
+    }
+
+    .bgm-icon-play {
+      display: none;
+    }
+
+    .bgm-icon-pause {
+      display: inline;
+    }
+  }
+}
